@@ -154,15 +154,6 @@ Add the following scripts and update the key `main`, `module` and `types`:
 
 ```
 
-### References
-
-https://prateeksurana.me/blog/react-component-library-using-storybook-6/
-
-https://prateeksurana.me/blog/react-library-with-typescript/
-
-https://nextjs.org/docs/messages/css-npm
-
-
 ### How to create CLI
 
 #### 1. Creacte the file **cli.js** within **/bin** in the root path, containing this:
@@ -198,3 +189,12 @@ In **package.json** add the following key:
 If you want to provide a single NodeJS command-line script with the same name as its file, you could just set a string instead of an object where the string would be the local file path.
 
 > Do not existing system or package command names!
+
+
+### References
+
+https://prateeksurana.me/blog/react-component-library-using-storybook-6/
+
+https://prateeksurana.me/blog/react-library-with-typescript/
+
+https://nextjs.org/docs/messages/css-npm
