@@ -1,0 +1,39 @@
+{
+  "name": "rui-starter",
+  "version": "1.0.0",
+  "repository": "git@github.com:jeff-pal/rui-starter.git",
+  "author": "jeffpal <jeffpal.official@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@storybook/addon-actions": "^6.3.9",
+    "@storybook/addon-essentials": "^6.3.9",
+    "@storybook/addon-links": "^6.3.9",
+    "@storybook/react": "^6.3.9",
+    "@types/react": "^17.0.27",
+    "babel-loader": "^8.2.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.4.3"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "dependencies": {},
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "npx tsc",
+    "build:cjs": "npx tsc --module commonjs --outDir lib/cjs",
+    "copy-files": "npm run copy-files:css",
+    "copy-files:css": "npx copyfiles -u 1 src/**/*.css lib/esm && npx copyfiles -u 1 src/**/*.css lib/cjs",
+    "postbuild": "npm run copy-files && npm run remove-files",
+    "postinstall": "npm run build",
+    "remove-files": "npx rimraf src .gitignore tsconfig"
+  },
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "types": "lib/esm/index.d.ts"
+}
