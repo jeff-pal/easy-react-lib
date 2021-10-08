@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "outDir": "lib",
+    "lib": [
+      "dom",
+      "es6", 
+      "es2016",
+      "es2017",
+      "es2018",
+      "es2019",
+      "es2020",
+      "es2021",
+      "esnext"
+    ],
+    "declaration": true,
+    "declarationDir": "lib",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react"
+  },
+  "include": [
+    "src",
+  ],
+  "exclude": [
+    "**/*.spec.?s",
+    "**/*.test.?s",
+    "**/*.stories.?s",
+    "**/*.stories.?sx",
+  ]
+}
