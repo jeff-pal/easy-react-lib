@@ -3,18 +3,18 @@
 This is a React UI components library codebase for you who needs to create a shared component library and go fast with setup and understand how it works. We're gonna mainly use Typescript and Storybook. And we'll not publish the lib, instead we install it directly from a git repository with `git add ssh`.
 
 ## Compiler/bundler
-This version is built with Typescript Compiler (`tsc`). For a version built with [rollup](https://rollupjs.org/) bundler take a look at branch [`built-with-rollup`](https://github.com/jeff-pal/rui-starter/tree/built-with-rollup).
+This version is built with Typescript Compiler (`tsc`). For a version built with [rollup](https://rollupjs.org/) bundler take a look at branch [`built-with-rollup`](https://github.com/jeff-pal/easy-react-lib/tree/built-with-rollup).
 
 > Not compatible with Nextjs because of this: [CSS Imported by a Dependency](https://nextjs.org/docs/messages/css-npm) 
 
 
 # Install
 ```
-yarn add ssh://git@github.com:jeff-pal/rui-starter.git
+yarn add ssh://git@github.com:jeff-pal/easy-react-lib.git
 
 #or
 
-npm i ssh://git@github.com:jeff-pal/rui-starter.git
+npm i ssh://git@github.com:jeff-pal/easy-react-lib.git
 ```
 
 
