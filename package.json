@@ -4,6 +4,9 @@
   "repository": "git@github.com:jeff-pal/easy-react-lib.git",
   "author": "jeffpal <jeffpal.official@gmail.com>",
   "license": "MIT",
+  "bin": {
+    "hello": "./bin/cli.js"
+  },
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@storybook/addon-actions": "^6.3.9",
