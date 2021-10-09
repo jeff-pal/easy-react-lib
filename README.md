@@ -1,3 +1,5 @@
+<img alt="Easy React Library logo" src="erl.png" width="15%">
+
 # Easy React UI Library
 
 This is a React UI components library codebase for you who needs to create a shared component library and go fast with setup and understand how it works. We're gonna mainly use Typescript and Storybook. And we'll not publish the lib, instead we install it directly from a git repository with `git add ssh`.
