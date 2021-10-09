@@ -1,11 +1,11 @@
 {
-  "name": "rui-starter",
+  "name": "easy-react-lib",
   "version": "1.0.0",
-  "repository": "git@github.com:jeff-pal/rui-starter.git",
+  "repository": "git@github.com:jeff-pal/easy-react-lib.git",
   "author": "jeffpal <jeffpal.official@gmail.com>",
   "license": "MIT",
   "bin": {
-    "hello-rui": "./bin/cli.js"
+    "hello": "./bin/cli.js"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
