@@ -24,7 +24,7 @@ npm i ssh://git@github.com:jeff-pal/easy-react-lib.git
 
 Here it's presented the steps to build the lib. As this is not a web application itself, so it would be better lean, then we setup React from scratch instead of using something like create-react-app.
 
-### 1. Create a Git Repository
+## 1. Create a Git Repository
 
 Create a git repo for your component library if you haven't done it yet. Then create a new folder and init it:
 
@@ -37,11 +37,12 @@ git branch -M main
 git remote add origin <your-ssh-repo-address>
 git push -u origin main
 ```
-### 2. Init
+
+## 2. Init
 
 From the lib root path run `npm init -y`.
 
-### 3. Installing dependencies
+## 3. Installing dependencies
 
 ```bash
 npm i --save-dev react react-dom @types/react typescript
@@ -58,7 +59,7 @@ Add the following snippet to the *package.json*:
   }
 ```
 
-### 4. Setup Typescript
+## 4. Setup Typescript
 
 Let's configure the  typescript by running the command `npx tsc --init`. Then update the *tsconfig.json* to this: 
 
@@ -104,7 +105,7 @@ Let's configure the  typescript by running the command `npx tsc --init`. Then up
 
 You can check all these config options in the [Typescript tsconfig reference](https://www.typescriptlang.org/tsconfig).
 
-### 5. Setup Storybook
+## 5. Setup Storybook
 
 Storybook is an open source tool for building UI components and pages in isolation. It streamlines UI development, testing, and documentation.
 
@@ -133,9 +134,9 @@ Storybook is an open source tool for building UI components and pages in isolati
 
 First of all, create a folder src/components and place a component and a story.
 
-### Setup package.json
+## 6. Setup package.json
 
-Add the following scripts and update the key `main`, `module` and `types`:
+Add the following `scripts` and update the keys `main`, `module` and `types`:
 
 ```json
 ...
@@ -156,9 +157,9 @@ Add the following scripts and update the key `main`, `module` and `types`:
 
 ```
 
-### How to create CLI
+## 7. Create CLI
 
-#### 1. Creacte the file **cli.js** within **/bin** in the root path, containing this:
+### 1. Create the file **cli.js** within **/bin** in the root path, containing this:
 
 ```
 #!/usr/bin/env node
@@ -172,13 +173,13 @@ Therefore, `/usr/bin/env node` is an instruction to set the [PATH](https://opens
 I recommend you to look for more details about [`env`](https://man7.org/linux/man-pages/man1/env.1.html) and #! ([shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)))
 
 
-#### 2. Give running permission for that file:
+### 2. Give running permission for that file:
 
 ```
 chmod +x bin/cli.js
 ```
 
-#### 3. Map a command-line script to a command name
+### 3. Map a command-line script to a command name
 
 In **package.json** add the following key:
 
@@ -190,14 +191,27 @@ In **package.json** add the following key:
 
 If you want to provide a single NodeJS command-line script with the same name as the project (name in package.json), you could just set a string instead of an object where the string would be the local file path.
 
-> Do not existing system or package command names!
+### 4. Testing locally
+
+```
+npm link
+my-command-name
+```
+
+
+
+# Issues
+
+## 1. Do not existing system or package command names!
 
 Possible causes:
 
 - if testing locally, package may not be linked (run `npm link`)
 
+## 2. [Yarn link doesn't link binaries globally ](https://github.com/yarnpkg/yarn/issues/891) 
 
-### References
+
+# References
 
 https://prateeksurana.me/blog/react-component-library-using-storybook-6/
 
