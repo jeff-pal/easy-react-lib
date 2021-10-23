@@ -188,9 +188,13 @@ In **package.json** add the following key:
 }
 ```
 
-If you want to provide a single NodeJS command-line script with the same name as its file, you could just set a string instead of an object where the string would be the local file path.
+If you want to provide a single NodeJS command-line script with the same name as the project (name in package.json), you could just set a string instead of an object where the string would be the local file path.
 
 > Do not existing system or package command names!
+
+Possible causes:
+
+- if testing locally, package may not be linked (run `npm link`)
 
 
 ### References
