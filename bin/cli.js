@@ -14,4 +14,4 @@ async function typing(text, dots = '.') {
 }
 
 console.log('Arguments: ', process.argv);
-typing('Hi! I\'m your the easy-react-lib CLI').then(result => process.stdout.write(`\n`))
+typing('Hi! I\'m your easy-react-lib CLI').then(result => process.stdout.write(`\n`))
